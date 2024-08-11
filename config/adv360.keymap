@@ -22,19 +22,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        ocr {
-            bindings = <&kp LG(LS(T))>;
-            key-positions = <60 46 19 30>;
-        };
-
-        select_screenshot {
-            bindings = <&kp LS(LG(S))>;
-            key-positions = <60 46 30>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -61,11 +49,11 @@
 
         fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4         &kp F5         &kp F6         &tog 1                                      &mo 3   &kp F7  &kp F8         &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans         &trans         &kp LA(LC(T))  &none                                       &none   &trans  &trans         &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans         &kp LA(LC(F))  &trans         &none   &trans  &trans      &trans  &trans  &none   &trans  &trans         &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &kp LA(LC(C))  &trans         &kp LA(LC(B))                  &trans      &trans                  &trans  &kp LA(LC(M))  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans         &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans         &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4             &kp F5             &kp F6             &tog 1                                      &mo 3   &kp F7  &kp F8             &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans             &trans             &kp LA(LC(LG(T)))  &none                                       &none   &trans  &trans             &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans             &kp LA(LC(LG(F)))  &trans             &none   &trans  &trans      &trans  &trans  &none   &trans  &trans             &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &kp LA(LC(LG(C)))  &trans             &kp LA(LC(LG(B)))                  &trans      &trans                  &trans  &kp LA(LC(LG(M)))  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans             &trans                                &trans  &trans  &trans      &trans  &trans  &trans          &trans             &trans  &trans   &trans   &trans
             >;
         };
 
