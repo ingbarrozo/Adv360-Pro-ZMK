@@ -28,7 +28,7 @@
         testing_number1: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(N1)))>, <&macro_wait_time 1>, <&tog 0>;
+            bindings = <&kp LG(LC(LA(N1)))>, <&macro_wait_time 5>, <&tog 2>;
 
             label = "NEW_MACRO";
         };
