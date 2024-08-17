@@ -36,7 +36,7 @@
         reformat: reformat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(L))>, <&macro_wait_time 500>, <&kp LS(LC(L))>;
+            bindings = <&kp LS(LA(L))>, <&macro_wait_time 500>, <&kp LC(LA(L))>;
 
             label = "REFORMAT";
         };
